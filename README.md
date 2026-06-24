@@ -530,13 +530,18 @@ HTML templates used by Django to render pages for all applications in the projec
 
 <!-- TODO: команда, замініть цей розділ на реальні труднощі, з якими ви зіткнулись -->
 
-Під час створення цього проєкту ми зіштовхнулися з рядом викликів. Реалізація обміну повідомленнями в реальному часі через WebSockets та Django Channels вимагала більш глибокого розуміння асинхронного коду, ніж звичайна синхронна робота з Django. Окремою складністю стало коректне розмежування застосунків (apps) на ранньому етапі — частину логіки довелося переносити з одного модуля в інший вже під час розробки. Команді також знадобився час, щоб налаштувати збереження та коректне відображення медіафайлів (аватари, зображення постів) у поєднанні з ASGI-сервером.
+Перша проблема, яка виникла, — це нестикування графіка роботи з співкомандниками, але ця проблема дуже швидко вирішилась, коли всі надали свої графіки занять.
+Друга проблема в тому, що подібний проєкт ми робимо вперше, тому виникали своєрідні невеликі труднощі та питання.
+У деяких моментах ми могли що-небудь забути або не знати, і доводилось шукати й гуглити інформацію по проєкту, а також пробувати купу різних варіантів, щоб виправити ту чи іншу помилку.
+Ще одна проблема виникла, коли хтось міг щось не записати в конспект на уроці або пропустити минулу зустріч, і доводилось вводити людину в курс справи.
 
 <details>
 <summary>English version</summary>
 
-During the creation of this project, we encountered a number of challenges. Implementing real-time messaging via WebSockets and Django Channels required a deeper understanding of asynchronous code compared to regular synchronous Django development. Another difficulty was correctly separating the apps at an early stage — part of the logic had to be moved between modules during development. The team also needed time to set up proper storage and display of media files (avatars, post images) together with the ASGI server.
-
+The first problem that arose was a scheduling conflict with my teammates, but this issue was resolved very quickly once everyone shared their class schedules.
+The second problem was that we are doing this kind of project for the first time, so we faced some minor difficulties and questions.
+At certain points, we could forget or not know something, so we had to search and google information about the project, as well as try a bunch of different options to fix a particular error.
+Another problem arose when someone might have missed something in their class notes or missed the previous meeting, so we had to bring them up to speed.
 </details>
 
 [⬆️Table of contents](#articles)
@@ -544,10 +549,11 @@ During the creation of this project, we encountered a number of challenges. Impl
 <a name="conclusions"><h2>Conclusion</h2></a>
 
 <!-- TODO: команда, замініть цей розділ на власні висновки -->
+Це був наш перший подібний проект що дав нам очевидний досвід. Ми працювали з Django JS CSS HTML і т.д. що дало нам явне уявлення як з цим працювати та реалізовувати.
+Вперше ми зіткнулися і попрацювали з WebSocket та AJAX для того, щоб реальзувати спілкування в реальному часі та роботу веб-сторінки у фоновому режимі.
 
-Робота над цим проєктом дала команді практичний досвід створення сучасного вебзастосунку на Django з підтримкою реального часу. Ми навчилися працювати з кастомною моделлю користувача та системою автентифікації, реалізовувати обмін повідомленнями через WebSockets і Django Channels, організовувати дані для соціальної мережі (пости, профілі, чати, друзі) та розподіляти проєкт на окремі модулі для зручної підтримки й масштабування.
 
-У подальшому проєкт можна розвивати, додавши систему сповіщень у реальному часі, групові чати з розширеними правами, стрічку рекомендацій, а також покриття тестами.
+
 
 <details>
 <summary>English version</summary>
@@ -559,3 +565,16 @@ Going forward, the project could be extended with real-time notifications, group
 </details>
 
 [⬆️Table of contents](#articles)
+
+
+
+
+
+
+
+
+
+
+
+
+
